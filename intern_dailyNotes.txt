@@ -1,0 +1,553 @@
+DAY 1 - 06/01/2025
+
+case 1 number of lemons in hand 7 output should be god 1- 7 offered god 2- need 7 god 3-  need 7 
+
+shortage: 14
+
+case 2 number of lemons in hand 21 output should be god 1- 7 offered god 2- 7 offered god 3-  7 offered
+
+sufficient 
+
+case 3 number of lemons in hand 15 output should be god 1- 7 offered god 2- 7 offered god 3-  having 1 need 6
+
+shortage: 6
+
+case 4 number of lemons in hand 67 output should be god 1- 7 offered god 2- 7 offered god 3-  7 offered
+
+surplus
+
+………………..
+
+sam is having 75 candies and he gives half of it to his friend angle.since angle loves sam a lot so she gives him half of her [portion.how](http://portion.how) many sam and angle have.
+
+constraints: one variable and use function
+
+=============================================================================
+
+DAY 2,3 - 07/01/2025 - 08/01/2025
+
+there is a birthday party going on
+
+write a promise called andhra-bp three funtions person A person B person C, distance andhra to A 5000 andhra to  **B 2000 andhra to C 1000**
+
+promise inbuilt methods
+
+when there is more than one promise, in order to review them we can use promise inbuilt methods according to the requirement
+
+methods:
+
+promise.all()
+
+once it sees a promise false it will stop
+
+promise.any()
+
+gives the shortest time promise provided the status should be true
+
+promise.allsettled()
+
+will display one among these three states 1. fulfilled 2. rejected 3. pending
+
+promise.race()
+
+if any promise is rejected its status is printed
+
+---
+
+a website create using html
+
+one more website using react
+
+---
+
+react js
+
+its library or framework of js
+
+e.g: netflix, amazon
+
+html websites: youtube, wikipedia
+
+node -v
+
+npm -v
+
+creating react app from cmd
+
+npm create-react-app app-name
+
+create a folder named react in desktop
+
+open cmd from that folder
+
+check versions of node and npm
+
+creating react app using the below command 
+
+npm create-react-app app-name(demo)
+
+npm start(starting the app)
+
+open app at port 3000
+
+make it work
+
+[1.open](http://1.open) your react forder and see if app folder created
+
+[2.to](http://2.to) open my app in vs code - goto cmd and use “cd app-name” and “code . “
+
+two important folders in react
+
+1.public
+
+2.src
+
+three other important files
+
+1. index.html
+2. index.js
+3. index.css
+
+initially do or write your code in app.js
+
+DOM(document object manager)
+
+react follows VDOM(virtual document object manager)
+
+here unlike html once dom gets created the changes or manipulation what we do gets completed and only that part alone will be re-rendered
+
+whereas in html everytime we make change the entire dom will be re-rendered
+
+in web application created by react each and everything is called as components
+
+types:
+
+- funtional component
+- class component
+
+jsx
+
+1. writing html inside js
+
+===========================================================================
+
+DAY 4,5 - 09/01/2025-10/01/2025
+
+---
+
+props and states - every component will have probs and states
+
+props - it won’t change
+
+eg: brand tata’s bislery
+
+states - it changes or we can change it
+
+eg: water level in bottle
+
+initial state is full 
+
+updated state is half
+
+current state is empty
+
+flipkart website
+
+home page - grocery, mobile, fashion (components)
+
+mobiles
+
+component name: mobile
+
+props: name, version, price
+
+state:  discount, stock available
+
+passing props between componens
+
+create two files named parent.js and child.js
+
+hooks
+
+earlier in IT industry they were using class components. recently state concepts was not available with functional components
+
+nowadays hooks is used to inplement state in functional components
+
+types:
+
+1. useState
+    
+    eg: counter clock
+    
+    stating the initial state as 0 we can increment it decreament it reset it using useState hook
+    
+    it takes initial state as argument and returns array of two values which is initial and updated state
+    
+2. useEffect
+    1. 
+3. useRef
+4. useContext
+5. useReducer
+
+===========================================================================
+
+DAY 6 - 11/01/2025
+
+useEffect
+
+upon the condition or action we apply in our functional components monitoring the impact or side effects can be done using useEffect hook 
+
+use accepts two arguments 
+
+1. callback function - it is like constructor in java
+2. dependenct array - 
+
+lets say we have 5 components namely c1 c2 c3 c4 c5 and add and display msg c1 to c2 respectively by keeping c1 as parent and rest all children in order. so c1 child is c2 and c2 child is c3 and so on. every component should display its name as msg as c1 c2……c5 display them from h1 to h5
+
+===========================================================================
+
+DAY 7,8 - 19/01/2025 - 20/01/2025
+
+---
+
+lets say we have 5 components namely c1 c2 c3 c4 c5 and add and display msg c1 to c2 respectively by keeping c1 as parent and rest all children in order. so c1 child is c2 and c2 child is c3 and so on. every component should display its name as msg as c1 c2……c5 display them from h1 to h5
+
+whenever we write something wihtin { } it can be either js object or react component
+
+props can be passed between components only by following the hierarichy which means from parent to child
+
+to overcome this in terms of efficiency we are using hooks
+
+conclusion:
+
+if we want to use state in one componet to another component the only way to achieve it by passing it in hierarchy.
+
+this is not efficient. to make it efficient we have an exclusive hook called useContext
+
+usecontext:
+
+without using the hierarchy passing state from one component to another in efficient way
+
+1. create context
+2. use context
+
+in the given example createContext will be done in app component and that will be used in user component using useConext
+
+synchronization:
+
+after our action monitoring or seeing the side effects happening in the functional component is possible using useEffect  hook
+
+===========================================================================
+
+DAY 9 - 21/01/2025
+
+---
+
+useReducer()
+
+1. it takes 2 arguments first is reducer function which says what u want to do (increament or decreament ), second is initial value of state
+2. it returns array with two value like useState
+
+first is that initial count and second is dispatch function 
+
+we call them as **state and dispatch**
+
+____here state will hold and initial value and updated once you call dispatch function and dispatch will trigger useReducer function
+
+get a password from the user as input and if the password is correct display the component “login granted” else “access denied”
+
+===========================================================================
+
+DAY 11,12 - 22/01/2025 -23/01/2025
+
+---
+
+npm i @reduxjs/toolkit react-redux 
+
+npm i react-router-dom
+
+structure:
+
+```jsx
+<router>
+  <routes>
+    <Route>
+      
+    </Route>
+  </routes>  
+</router>
+```
+
+userInfo is the key for reducers and useReducer is the bane we 
+
+give for reducer actions we get from userslice.js
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+// Images (Replace with actual image URLs or imports)
+const homeImage = "https://via.placeholder.com/600x400?text=Home";
+const usersImage = "https://via.placeholder.com/600x400?text=Users";
+const aboutImage = "https://via.placeholder.com/600x400?text=About";
+const contactImage = "https://via.placeholder.com/600x400?text=Contact";
+
+// Component for displaying images
+const ImagePage = ({ imageUrl, title }) => (
+<div style={{ textAlign: "center", marginTop: "50px" }}>
+<h1>{title}</h1>
+<img src={imageUrl} alt={title} style={{ maxWidth: "80%", height: "auto" }} />
+</div>
+);
+
+function App() {
+return (
+<Router>
+<nav style={{ display: "flex", justifyContent: "center", gap: "20px", padding: "10px", backgroundColor: "#f0f0f0" }}>
+<Link to="/">Home</Link>
+<Link to="/users">Users</Link>
+<Link to="/about">About</Link>
+<Link to="/contact">Contact</Link>
+</nav>
+<Routes>
+<Route path="/" element={<ImagePage imageUrl={homeImage} title="Home" />} />
+<Route path="/users" element={<ImagePage imageUrl={usersImage} title="Users" />} />
+<Route path="/about" element={<ImagePage imageUrl={aboutImage} title="About" />} />
+<Route path="/contact" element={<ImagePage imageUrl={contactImage} title="Contact" />} />
+</Routes>
+</Router>
+);
+}
+
+export default App;
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import Users from './pages/Users';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+const App = () => {
+return (
+<Router>
+<div style={{ textAlign: 'center' }}>
+<nav style={{ margin: '20px' }}>
+<Link to="/" style={{ margin: '10px' }}>Home</Link>
+<Link to="/users" style={{ margin: '10px' }}>Users</Link>
+<Link to="/about" style={{ margin: '10px' }}>About</Link>
+<Link to="/contact" style={{ margin: '10px' }}>Contact</Link>
+</nav>
+
+```
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/users" element={<Users />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  </div>
+</Router>
+
+```
+
+);
+};
+
+export default App;
+
+===========================================================================
+
+DAY 13,14 - 23/01/2025 - 24/01/2025
+
+---
+
+we use mongodb as no sql type of data in unstructured json format
+
+COMPASS:
+compass helps to fetch data form mongo db server means compass helps you to reach mongo db ..link its client(GUI)
+
+MONGOSH:
+the mongobd shell was replaced as mongosh
+the mongodb shell gives you as an interactive environment where you can run quries , mange db, and perform administrative tasks
+
+data modeling and schema
+
+schema: its the actual blue print of the db by fixing the format by fixin the component using data modeling
+
+NO SQL 
+
+SQL-RECORD
+
+MONGO - DOCUMENT
+
+COLLECTIONS ARE STORED IN DB
+
+MONGO WILL HAVE MULTIPLE DB
+
+command:
+
+use databaseName // creating and using database
+
+dbs.show
+
+db.createCollection(collectionName)
+
+db.collectionName.insertOne({objects})
+
+db.collectionName.insertMany({array of objects})
+
+create a db called computers 
+
+one collection named laptops
+
+fields: name,model,color,status(available,not available),price,{vendor:→fieldf: vendorname,vendor price}
+
+listout particular model laptops
+
+change its status to vice versa
+
+===========================================================================
+
+DAY 15 - 25/01/2025
+
+---
+
+updateOne - does not modify the field is the same value is given
+
+filter all records with price range 30k to 50k and go with del and add field called shipping :yes
+
+create a collection called details- id(number), name(string) ,age(number) ,city(string)
+
+$in
+
+db.details.find({ city: { $in: ['texas', 'korea'] } })
+
+$nin(not in)
+
+db.details.find({ city: { $nin: ['texas', 'korea'] } })
+
+$and-find record with all conditions matching
+
+db.details.find({$and:[{city:'texas'},{_id:3}]})
+
+$or- find record with any of the conditions matching
+
+db.details.find({$or:[{city:'texas'},{_id:3}]})
+
+$exists
+
+db.details.find({$and:[{city:{$exists:false},age:{$gte:40}}]})
+
+db.details.find({$and:[{city:{$exists:true},age:{$gte:40}}]})
+
+---
+
+=⇒>> in mysql group by
+
+=⇒>> in mongoDB aggregate(aggregation)
+
+e.g:
+
+db.companies.aggregate([{$lookup:from:’employees’,localField:’id’,foreignField:’company_id’,as:’Employees’}}])
+
+create a database called bank with two collections namely 1. customer_personal , 2. customer_account
+
+model1:
+
+id,name[string],address[array],ph_no[obj - ph 1,ph 2],age[num]
+
+model2:
+
+id, account_number[int],branch[string],bankname[string],ifsc_code[alpha_numeric],current_balance[float],account_type[savings/current],over_draft:[yes/no]
+
+queries:
+
+filter only od category yes
+
+display only customers address where the branch names are same
+
+current balance 10k to 20k filter and get only there phone numbers
+
+filter only savings account people only from collection one
+
+add field called stat
+
+node
+
+it is a backend library forms js
+
+requirements
+
+const http=require(’http’); //built in module
+
+const express=require(’express’); //third party module
+
+const sayHello=require(’./greet’) // custom module
+
+===========================================================================
+
+DAY 16 - 27/01/2025
+
+---
+
+nodes
+
+run time environment 
+
+note:
+
+maintain two split terminals in vs code in order to use client and server
+
+run command:   always  start the server first
+
+node server.js
+
+run client: npm start
+
+const express=require(’express’);
+
+const app=express();
+
+const port=3000;
+
+we can delete package.json —— to get it back the command is (————- npm init -y ————— )
+
+axios:{from js)
+
+its is a popular js library used to make http request form the browser or node js
+
+axios if known for easy and clean syntax and also flexibility especially works well with api and rest-api (when we write api for an exclusive purpose we call it as rest-api)
+
+cors:
+
+cross origin resource sharing
+
+when a webpage request info from resource(from other sites) whether to accept the request and process it or not will be defined in a rule book and for this purpose we use cors
+
+installation command—————  npm i cors  —————
+
+using datacomponent.js as client using http get method via api/data
+
+server responds as json
+
+from the json file i want to filter only the msg so we are using from cors response.data.message
+
+===========================================================================
+
+DAY 17 - 28/01/2025
+
+in index.js which is inside server folder write backend code
+
+emp1
+
+schema:
+
+employee id
+
+employee name
+
+employee salary
+
+employee contacts (array / object )
+
+===========================================================================
