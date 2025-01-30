@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+/* About Section Styling */
+.about-section {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #314755,#26a0da);      /* #1f1c2c, #928dab*//* background-color: #f4f4f9; */
+    color: #333;
+    text-align: center;
+}
+
+#spacing{
+    height:100px;
+    background: transparent;
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* About Text Styling */
+.about-text {
+    flex: 2;
+    padding: 20px;
+    color:white;
+    font-family: 'pacifico', cursive;
+    font-weight: 1000;
+    font-size-adjust: 0.5;
+    letter-spacing: 0.1em;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* About Image Styling */
+.about-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 40px #61dafbc7;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+    }
+
+    .about-image img {
+        max-width: 200px;
+    }
+}

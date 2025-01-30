@@ -1,0 +1,102 @@
+/* Header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #222222;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #61dafb;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+    flex-grow: 1;  /* Allow navigation to take available space */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
+    position: relative;
+}
+
+/* Ensure links are spaced properly */
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;  /* Add padding to prevent overlap */
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+/* Underline animation effect */
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    transition: background 0.3s ease, transform 0.3s ease;
+    transform: scaleX(0);
+}
+
+/* Show animation on hover and active state */
+.nav-links ul li a:hover::after,
+.nav-links ul li a.active::after {
+    background: #61dafb;
+    transform: scaleX(1);
+}
+
+/* Highlight active link */
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+    color: #61dafb;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 992px) {
+    .header {
+        padding: 15px 30px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links ul {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links ul li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,31 @@
+/* Remove any unwanted margins or padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+/* Section styling for visibility */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Ensure the header is fixed */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #222;
+    z-index: 1000;
+}
+
+/* Add some spacing for content under fixed header */
+main {
+    margin-top: 80px;
+}
