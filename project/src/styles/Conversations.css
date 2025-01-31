@@ -1,0 +1,157 @@
+.conversations-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.conversations-container h2 {
+  margin-bottom: 20px;
+  color: #2d3748;
+  font-size: 1.5rem;
+}
+
+.conversations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.conversation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.conversation-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.conversation-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.conversation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.conversation-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.conversation-time {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
+.conversation-last-message {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.unread-badge {
+  background-color: #4299e1;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.conversations-loading,
+.conversations-error,
+.conversations-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  text-align: center;
+  color: #4a5568;
+}
+
+.conversations-error {
+  color: #e53e3e;
+}
+
+.start-conversation-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #4299e1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.start-conversation-btn:hover {
+  background-color: #3182ce;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .conversations-container {
+    padding: 15px;
+  }
+
+  .conversation-item {
+    padding: 12px;
+  }
+
+  .conversation-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+  }
+
+  .conversation-header h3 {
+    font-size: 1rem;
+  }
+
+  .conversation-last-message {
+    font-size: 0.85rem;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 360px) {
+  .conversations-container {
+    padding: 10px;
+  }
+
+  .conversation-item {
+    padding: 10px;
+  }
+
+  .conversation-avatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+}
